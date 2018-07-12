@@ -1,0 +1,136 @@
+This thing is working
+------------------------------------
+Bookings:------------------------------------
+We are into 'retrieveBookings'
+{"startTime":"2018-06-14T00:00:00-07:00","endTime":"2018-06-15T00:00:00-07:00","apiKey":"AM3L7A6HLATFKC6JHJTWE41568747JEK1641E57DBC2","secretKey":"u5KHhbjfp3ac1RnRBO5kIJu5EAtLfELw"}
+
+
+
+
+{
+  "data": [],
+  "info": {
+    "totalItems": 0,
+    "totalPages": 0,
+    "currentPage": 0
+  }
+}
+------------------------------------
+Products:
+------------------------------------
+{"apiKey":"AM3L7A6HLATFKC6JHJTWE41568747JEK1641E57DBC2","secretKey":"u5KHhbjfp3ac1RnRBO5kIJu5EAtLfELw"}
+
+
+
+
+{
+  "data": [
+    {
+      "name": "Game",
+      "description": "",
+      "productId": "41568X7UUEU1641E5934D6",
+      "productCode": "41568X7UUEU1641E5934D6",
+      "bookingLimits": [
+        {
+          "min": 1,
+          "max": 20
+        },
+        {
+          "peopleCategoryId": "Cadults",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "peopleCategoryId": "Cchildren",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "peopleCategoryId": "Cinfants",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "duration": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 30
+      },
+      "type": "fixed",
+      "membersOnly": false,
+      "prepaidOnly": false,
+      "acceptDeny": false,
+      "apiBookingsAllowed": true,
+      "allowPrivateEvents": false
+    }
+  ],
+  "info": {
+    "totalItems": 1,
+    "totalPages": 1,
+    "currentPage": 1
+  }
+}
+------------------------------------Availabilty Slot:
+------------------------------------
+{"productId":"41568X7UUEU1641E5934D6","startTime":"2018-06-20T00:00:00-07:00","endTime":"2018-06-23T00:00:00-07:00","apiKey":"AM3L7A6HLATFKC6JHJTWE41568747JEK1641E57DBC2","secretKey":"u5KHhbjfp3ac1RnRBO5kIJu5EAtLfELw"}
+
+
+
+
+{
+  "data": [],
+  "info": {
+    "totalItems": 0,
+    "totalPages": 0,
+    "currentPage": 0
+  }
+}
+------------------------------------
+Hold
+------------------------------------
+URL: https://api.bookeo.com/v2/holds?apiKey=AM3L7A6HLATFKC6JHJTWE41568747JEK1641E57DBC2&secretKey=u5KHhbjfp3ac1RnRBO5kIJu5EAtLfELw
+Hola
+
+
+
+
+
+
+productId: 41568X7UUEU1641E5934D6
+Array
+(
+    [Booking] => Array
+        (
+            [eventId] => 41568X7UUEU1641E5934D6_41568AYY9XE164232C8076_2018-06-22
+            [title] => Title
+            [customer] => Array
+                (
+                    [firstName] => John Doe
+                    [lastName] => Smith
+                    [emailAddress] => dummy@dummy.com
+                )
+
+            [participants] => Array
+                (
+                    [numbers] => Array
+                        (
+                            [number] => 1
+                            [peopleCategoryId] => Cadults
+                        )
+
+                )
+
+            [productId] => 41568X7UUEU1641E5934D6
+        )
+
+)
+{"Booking":{"eventId":"41568X7UUEU1641E5934D6_41568AYY9XE164232C8076_2018-06-22","title":"Title","customer":{"firstName":"John Doe","lastName":"Smith","emailAddress":"dummy@dummy.com"},"participants":{"numbers":{"number":1,"peopleCategoryId":"Cadults"}},"productId":"41568X7UUEU1641E5934D6"}}
+
+
+
+
+{
+  "httpStatus": 400,
+  "message": "Missing or invalid field: Booking.productId",
+  "errorId": "1568G1806221533486F4HH"
+}
