@@ -27,11 +27,10 @@
 class WPBookeo
 {
 
-    private $API_KEY = 'AM3L7A6HLATFKC6JHJTWE41568747JEK1641E57DBC2'; //Jeff
-    // private $API_KEY        = 'A4ARN6LN9ATFKC6JHJTWE4156836AMX6163F3FBAD89'; // Samuel 
-    private $SECRET_KEY = 'u5KHhbjfp3ac1RnRBO5kIJu5EAtLfELw';
+    private $API_KEY = ''; 
+    private $SECRET_KEY = '';
     private $BOOKEO_URL = 'https://api.bookeo.com/v2/';
-    private $PRODUCT_CODE = '41568NY436A163F40164F2'; // Tours
+    private $PRODUCT_CODE = ''; // Tours
 
     private $actualUrl = ''; // This is the actual url that is being used
 
