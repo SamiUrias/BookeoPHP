@@ -156,15 +156,15 @@ class WPBookeo
         return $output;
     }
 
-    public function checkAvailabileSlots($productId)
+    public function checkAvailabileSlots($productId, $customStartTime = false)
     {
         echo "Into " . __FUNCTION__ . " ... " . PHP_EOL;
         $url = $this->BOOKEO_URL . 'availability/slots';
         echo $url . PHP_EOL;
         $data = array(
             'productId' => $productId,
-            'startTime' => '2018-07-12T00:00:00-00:00',
-            'endTime' => '2018-07-15T00:00:00-00:00'
+            'startTime' => '2018-07-18T00:00:00-00:00',
+            'endTime' => '2018-07-20T00:00:00-00:00'
 
         );
         $data = array_merge($data, $this->arrayCredentials());
@@ -178,8 +178,8 @@ class WPBookeo
         $url = $this->BOOKEO_URL . 'availability/matchingslots/';
         $data = array(
             'productId' => $productId,
-            'startTime' => '2018-06-20T00:00:00-07:00',
-            'endTime' => '2018-06-21T00:00:00-07:00'
+            'startTime' => '2018-07-18T00:00:00-00:00',
+            'endTime' => '2018-07-19T00:00:00-07:00'
         );
         $data = array_merge($data, $this->arrayCredentials());
 
@@ -387,3 +387,4 @@ echo '------------------------------------' . PHP_EOL;
 $finalBookingResponse = $wpBookeo->createBookingFinalStep($headersId, '41568X7UUEU1641E5934D6_41568AYY9XE164232C8076_2018-07-13', '41568X7UUEU1641E5934D6');
 print_r($finalPriceResponse);
 ?>
+
