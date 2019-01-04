@@ -54,8 +54,8 @@ class WPBookeo
 
         $url = $this->BOOKEO_URL . 'bookings';
         $data = array(
-            'startTime' => '2018-07-11T00:00:00-07:00',
-            'endTime' => '2018-07-12T00:00:00-07:00'
+            'startTime' => '2018-08-29T00:00:00-07:00',
+            'endTime' => '2018-08-29T23:00:00-07:00'
         );
         $data = array_merge($data, $this->arrayCredentials());
 
